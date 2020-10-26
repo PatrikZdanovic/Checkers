@@ -36,7 +36,6 @@ public class Main {
             key[1] = myScanner.nextInt();
             if (!turn) {
                 key[0] = (key[0] - 9) * (-1);
-                System.out.println(key[0]);
             }
             if (isValid(key[0], key[1], turn)) {
                 System.out.println("Where do you want to Move L or R | HitL or HitR");
