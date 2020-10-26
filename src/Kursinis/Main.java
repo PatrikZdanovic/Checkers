@@ -150,8 +150,9 @@ public class Main {
             System.out.println("\n \n \n \n \n \n \n \n \n \n \n");
             if (friendlyLeft==0 || enemyLeft==0){
                 gameOver=!gameOver;
+                System.out.println("GAME OVER");
             }
-            System.out.println("GAME OVER");
+            
         }
     }
 
