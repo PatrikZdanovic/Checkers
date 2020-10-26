@@ -56,7 +56,6 @@ public class Main {
                                 }
                                 turnMade = true;
                                 model[key[0]][key[1]] = 0;
-                                System.out.println("aaa");
                                 break;
                             } else {
                                 break;
@@ -147,8 +146,12 @@ public class Main {
                 if (turnMade) turn = !turn;
 
             }
-            else System.out.println("WRONG INPUT" + model[key[0]][key[1]]);
+            else System.out.println("WRONG INPUT");
             System.out.println("\n \n \n \n \n \n \n \n \n \n \n");
+            if (friendlyLeft==0 || enemyLeft==0){
+                gameOver=!gameOver;
+            }
+            System.out.println("GAME OVER");
         }
     }
 
